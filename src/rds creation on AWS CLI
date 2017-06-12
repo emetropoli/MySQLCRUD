@@ -1,0 +1,3 @@
+
+aws rds create-db-instance --db-instance-identifier testdb --allocated-storage 20 --db-instance-class db.m1.small --engine mysql --master-username root --master-user-password rootpassword
+	

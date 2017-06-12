@@ -12,7 +12,8 @@ public class DBConnect {
     
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","root","");
+            con = DriverManager.getConnection("jdbc:mysql://testdb.chock9gctztt.us-east-1.rds.amazonaws.com:3306/testdb?user=root&password=rootpassword");
+            //jdbc:driver://testdb.chock9gctztt.us-east-1.rds.amazonaws.com:3306/testdb?user=root&password=rootpassword
             st = con.createStatement();
         }catch(Exception ex) {
             System.out.println("ConnectionError| DBConnect constructor: "+ex);
